@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolip</title>
+    <link rel="stylesheet" href="style.cs">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+
+</head>
+<body class="overflow-x-hidden font-outfit dark:bg-darkTheme dark:text-white">
+      <nav class="w-full fixed px-6 lg:px-8  xl:px-[8%] py-4 items-center flex z-50 justify-between   bg-gradient-to-t from-red-100 to-blue-100 p-4    filex  filter drop-shadow-md md:drop-shadow-xl">
+        <!-- <h2 class="font-black text-[20px]">Jasveer Singh..</h2> -->
+        <img src="depositphotos_18335825-stock-photo-portfolio-cut-from-paper-on-removebg-preview.png" class="w-32  h-12">
+          <ul class="hidden md:flex items-center gap-6 lg:gap-9 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:text-black">
+             <li><a href="#Home">Home</a></li>
+             <li><a href="#About">About Me</a></li>
+             <li><a href="#Services">Services</a></li>
+             <li><a href="#Project">Project</a></li>
+          </ul>
+              
+            <div id="btn" class="flex gap-6">
+               <button onclick="toggleTheme()">
+                <img src="darkmode2.png" class="w-7 mt-1 dark:hidden">
+                <img src="sun-line.png" class="w-7 mt-1  hidden dark:block">
+               </button>
+                <a href="#contact">
+                  <button  class=" hidden md:flex px-[20px] py-2 items-center  justify-center border-4 rounded-full bg-blue-300 border-2 border-black dark:text-black">contact 
+                    <img src="message-2-fill.png" class="w-5 ml-2">
+                  </button>
+                </a>
+                <img src="menu-button-removebg-preview.png" class=" block md:hidden h-9  cursor-pointer" onclick="openmenu()">
+            </div>
+
+              <!---------------- mobile menu---------------->
+                
+              <ul id="sidemenu" class="md:hidden  flex bg-red-100 flex-col items-center  gap-4 fixed  py-20 px-10 -right-64 top-0 bottom-0 h-screen w-64 z-50  transition duration-500 dark:bg-[#2a004a]">
+
+                <div class="absolute right-6 top-6" onclick="closemenu()">
+                    <img src="close.png"  alt="" class="w-7 cursor-pointer dark:hidden">
+
+                    <img src="close-large-fill.png" alt="" class="w-7 cursor-pointer hidden dark:block">
+                 </div>
+                <li><a href="#Home" onclick="closemenu()" class="mt-0">Home</a></li>
+                <li><a href="#About" onclick="closemenu()"  class="mt-5">About</a></li>
+                <li><a href="#Services"onclick="closemenu()" >Services</a></li>
+                <li><a href="#Project"onclick="closemenu()">project</a></li>
+                 <li> <a href="#contact" onclick="closemenu()">
+                  <button class="border-2 border-blue-200 px-7 py-1  rounded-full mt-2">contact me</button>
+                 </a></li>
+              </ul>
+            </nav>
+                    <!--------- header ----------->
+
+            <div id="Home" class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-3">
+               <img src="jasveer3-removebg-preview.png" class="w-40 mt-12 sm:mt-14">
+               <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-1">Hi i'm jasveer singh <img src="1-2-45.png" class="w-5"></h3>
+               
+               <h1 class="text-3xl sm:text-6xl lg:text-[66px]">web <sapn class="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-blue-500">developer </sapn>from india.</h1>
+               <p class="max-w-2xl mx-auto text-xl mt-2"> i am a web developer from india and i have 1 year exprience in web technology like fronend and backend.</p>
+                 <div class=" sm:flex gap-4 mt-2">
+                     <a href="mailto:jj3784672@gmail.com" e-mail>
+                      <button class="px-10 py-3 flex mb-5  border-2 border-black items-center  rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white  text-xl gap-2">Hire Me 
+                        <img src="png-arrow-right-hd-design-3d-silver-11672137875d93nuiclbp-removebg-preview.png" class="w-10">
+                      </button>
+                     </a>
+                     <a href="resume.jpeg" download>
+                      <button class="flex   border-2 border-black px-8 py-2   items-center rounded-full  text-xl-70  dark:bg-red-200 dark:text-black">Download CV
+                        <img src="download-sign-icon-logo-design-vector-removebg-preview.png" class="w-10 dark:text-white">
+                      </button>
+                     </a>
+                 </div>
+            </div>     
+                 
+                   <!------------ about me -------------->
+            
+             <div id="About" class=" w-full px-[12%] py-8">
+               
+               <h2 class="text-center text-5xl mt-12 font-Ovo">About Me</h2>
+              
+                  <div class="  flex w-full flex-col  lg:flex-row items-center gap-20 my-16">
+                    <div class="max-w-max mx-auto relative   rounded-xl">
+                      <img src="WhatsApp_Image_2023-09-24_at_8.10.37_PMewewe3w-removebg-preview (2).png" class="w-60  h-64 sm:w-60 rounded-2xl max-w-none">
+                    </div>
+                    <div class="flex-1  sm:grid-cols-3">
+                       <p  class="mb-10 max-w-2xl text-2xl md:text-xl  sm:leading-5 ">
+                           I'm a web developer who loves building websites that are easy to use and look great. I have skilled in HTML, CSS, (TailwindCss) and JavaScript, and I'm always learning new things to stay up to date. I design and develop websites that work well on all devices full responsive, and I'm excited to work with you to create something together.
+                       </p>
+                          <ul class=" grid grid-cols-1 sm:grid-cols-3 gap-5  max-w-2xl mb-5">
+                            <li  class="border-[0.5px] hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] border-gray-400  rounded-xl p-6 cursor-pointer
+                                dark:border-white dark:hover:shadow-white dark:hover:bg-skyHover">
+                               <img src="code-s-slash-line.png" class="w-9 mt-2 dark:hidden">
+                               <img src="code-s-slash-fill.png" class="w-9 mt-2 hidden dark:block">
+                               <h3 class=" my-4  font-semibold text-gray-700  dark:text-white"> Languages</h3>
+                               <p>Html, CSS, Tailwindcss, JavaScript, React js.</p>
+                            </li>
+                             <li  class="border-[0.5px] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500   hover:shadow-[4px_4px_0_#000] border-gray-400  rounded-xl p-6 cursor-pointer
+                                 dark:border-white dark:hover:shadow-white dark:hover:bg-skyHover">
+                                <img src="graduation-cap-line.png" class="w-9 mt-2 dark:hidden">
+                                <img src="graduation-cap-line (1).png" class="w-9 mt-2 hidden dark:block">
+                                <h3 class=" my-4  font-semibold text-gray-700  dark:text-white"> Eduacation</h3>
+                                <p> BCA. [ Bachelor Of Computer Application ].</p>
+                             </li>
+                           <li  class="border-[0.5px] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500  hover:shadow-[4px_4px_0_#000] border-gray-400  rounded-xl p-6 cursor-pointer
+                                dark:border-white dark:hover:shadow-white dark:hover:bg-skyHover">
+                            <img src="shopping-bag-4-line.png" class="w-9 mt-2 dark:hidden">
+                            <img src="handbag-line.png" class="w-9 mt-2 hidden dark:block">
+                            <h3 class=" my-4  font-semibold text-gray-700 dark:text-white "> Project</h3>
+                            <p>Built More Then 5+ Project.</p>
+                          </li>
+                        </ul>
+                       </p>
+                    </div>
+                  </div>
+             </div>        
+               
+              <!----------services ---------->
+
+              <div id="Services" class="w-full px-[12%] py-10 scroll-mt-20 ">
+                <h2 class="text-center text-5xl mt-10">Services</h2>
+                  <p class="text-center  max-w-2xl mx-auto mt-5 mb-12"> We offer web design, mobile app development, UI/UX design, and graphic design. see below</p>
+                  <div  class="grid sm:grid-cols-4 gap-6 my-10 ">
+                    <div class="border border-gray-400 rounded-lg px-8 py-6  hover:bg-lightHover hover:-translate-y-1 duration-500  hover:shadow-[4px_4px_0_#000]
+                         dark:border-white dark:hover:shadow-white dark:hover:bg-skyHover ">
+                      <img src="android-2-512.webp" class=" w-20">
+                      <h3 class="text-lg my-4 text-gray-500 dark:text-white">App Development</h3>
+                      <p class="text-sm leading-5"> Android development is the process of building, programmig..</p>
+                       <a href="" class="flex mt-3 text-center gap-2  ">Read more <img src="411-4113696_high-resolution-black-arrow-png-download-right-arrow-removebg-preview.png" class="w-5 h-4 mt-2 dark:hidden"> 
+                            <img src="arrow-right-line.png" class=" w-5 h-4 mt-2    hidden dark:block"></a>
+                    </div>
+                    <div class="border border-gray-400 rounded-lg px-8 py-6  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500  hover:shadow-[4px_4px_0_#000]
+                         dark:border-white dark:hover:shadow-white dark:hover:bg-skyHover ">
+                      <img src="Icon-Enhanced-Production.png" class=" w-16">
+                      <h3 class="text-lg my-4 text-gray-500 dark:text-white">Web Designing</h3>
+                      <p class="text-sm leading-5"> web development is the process of building, programmig..</p>
+                       <a href="" class="flex mt-3 text-center gap-2  ">Read more <img src="411-4113696_high-resolution-black-arrow-png-download-right-arrow-removebg-preview.png" class="w-5 h-4 mt-2 dark:hidden">
+                        <img src="arrow-right-line.png" class=" w-5 h-4 mt-2    hidden dark:block"></a>
+                    </div>
+                    <div class="border border-gray-400 rounded-lg px-8 py-6  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500  hover:shadow-[4px_4px_0_#000]
+                        dark:border-white dark:hover:shadow-white dark:hover:bg-skyHover ">
+                      <img src="Figma.png" class=" w-16 ">
+                       <h3 class="text-gray-500 my-4 text-lg dark:text-white">UI / UX Designer</h3>
+                       <p class="text-sm leading-5 mt-3"> ui / ux design is the process of building, design skills..</p>
+                       <a href="" class="flex mt-3 text-center gap-2  ">Read more <img src="411-4113696_high-resolution-black-arrow-png-download-right-arrow-removebg-preview.png" class="w-5 h-4 mt-2 dark:hidden">
+                        <img src="arrow-right-line.png" class=" w-5 h-4 mt-2    hidden dark:block"></a>
+                    </div>
+                    <div class="border border-gray-400 rounded-lg px-8 py-6  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500  hover:shadow-[4px_4px_0_#000]
+                         dark:border-white dark:hover:shadow-white dark:hover:bg-skyHover ">
+                      <img src="graphic-removebg-preview.png" class=" w-[70px]">
+                      <h3 class="text-lg my-4 text-gray-500 dark:text-white">Graphic Designer</h3>
+                      <p class="text-sm leading-5">computer graphic is the process of building, graphical skills..</p>
+                       <a href="#" class="flex mt-3 text-center gap-2  ">Read more <img src="411-4113696_high-resolution-black-arrow-png-download-right-arrow-removebg-preview.png" class="w-5 h-4 mt-2 dark:hidden">
+                        <img src="arrow-right-line.png" class=" w-5 h-4 mt-2    hidden dark:block"></a>
+                    </div>
+                  </div>
+              </div>
+                 <!----------- my Project ------------->
+              <div id="Project" class="w-full px-[12%] py-10 scroll-mt-20 ">
+                <h2 class="text-center text-5xl mt-10">Project</h2>
+                <p class="text-center  max-w-2xl mx-auto mt-5 mb-12">I developed project in front-end development, data analytics, UI / UX design,and machine learning,focusing on the user-requarment and solve to problem. see below</p>
+                 <div class="grid grid-ros-1  md:grid-cols-4 my-8 gap-5">
+                      <div class="aspect-square bg-[url('fronend.avif')]  bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                           <div class="bg-white w-10/12 gap-3 rounded-md absolute  bottom-4 left-1/2  -translate-x-1/2  py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7 group-hover:bg-red-400 group-hover:text-white">
+                             <h3 class="font-semibold dark:text-black">Frontend</h3>
+                             <p class="text-sm  text-gray-700 group-hover:text-white">Designing</p>
+                           </div>
+                      </div>
+                      <div class="aspect-square bg-[url('1150199386.jpg')]  bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                        <div class="bg-white w-10/12 gap-3 rounded-md absolute  bottom-4 left-1/2  -translate-x-1/2  py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7 group-hover:bg-red-400 group-hover:text-white">
+                          <h3 class="font-semibold dark:text-black">Data</h3>
+                          <p class="text-sm  text-gray-700 group-hover:text-white">Analytics</p>
+                        </div>
+                     </div>
+                   <div class="aspect-square bg-[url('UX-UI.png')]  bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                    <div class="bg-white w-10/12 gap-3 rounded-md absolute  bottom-4 left-1/2  -translate-x-1/2  py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7 group-hover:bg-red-400 group-hover:text-white">
+                      <h3 class="font-semibold dark:text-black">UI / UX</h3>
+                      <p class="text-sm  text-gray-700 group-hover:text-white">Designing</p>
+                    </div>
+                  </div>
+                  <div class="aspect-square bg-[url('alml_1.jpg')]  bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                    <div class="bg-white w-10/12 gap-3 rounded-md absolute  bottom-4 left-1/2  -translate-x-1/2  py-3 px-5 flex items-center justify-center duration-500 group-hover:bottom-7 group-hover:bg-red-400 group-hover:text-white">
+                      <h3 class="font-semibold dark:text-black">AI / ML</h3>
+                      <p class="text-sm  text-gray-700 group-hover:text-white">Learning</p>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+                        <!---------------- contact me --------------->
+             
+                <div id="contact" class=" w-full px-[12%] py-8 ">
+                  <h2 class="text-center text-5xl mt-12">Contact Me</h2>
+                  <p class="text-center max-w-2xl mx-auto mt-5 mb-12  bg-white dark:text-white dark:bg-darkTheme">Thanks for visit our website. <br>If you have any question, so fill given below form and send me...</p>
+                   <form method="POST" action="https://api.web3forms.com/submit" id="contact" class="max-w-2xl mx-auto">
+                     <div class="grid grid-row-2 gap-6 mt-10 mb-8  md:grid-cols-2">
+                        <input type="hidden" name="access_key" value="15743d77-75b5-4738-979e-bb4e33126284">
+                        <input type="text" placeholder="Enter your Name" class=" flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md 
+                             dark:bg-skyHover dark:border-white/90" name="name" required>
+      
+                        <input type="email" placeholder="Enter your E-mail" class=" flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md
+                             dark:bg-skyHover dark:border-white/90" name="email" required >
+                     </div>
+                     <textarea rows="6" placeholder="Enter Your massege" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md dark:bg-skyHover dark:border-white/90" name="message" required></textarea>
+                      <button class="px-5 py-2 w-max items-center flex justify-center  bg-black rounded-full gap-2 mx-auto mt-5 text-white  dark:border  dark:border-white/90">send now
+                         <img src="png-arrow-right-hd-design-3d-silver-11672137875d93nuiclbp-removebg-preview.png" class="w-7 mt-2">
+                      </button>
+                   </form>
+                </div>
+              
+                     <!----------------- footer ----------------->
+                 <div>
+                  <h2 class=" flex items-center justify-center font-semibold">portfolio</h2>
+                   <div class="flex items-center justify-center mt-1 gap-2 ">
+                    <img src="download.png" class="w-5 dark:hidden">
+                    <img src="mail-star-line.png" class="w-5 hidden dark:block ">
+                    <h2 class="">jj3784672@gmail.com</h2><br>
+                   </div>
+
+                     <div class=" flex items-center justify-center mt-2 ">
+                       <img src="phone-line.png" class="">
+                       <img src="phone-line (4).png" class="">
+                      <p>+91 7906821258</p>
+                     </div>
+                   <div class="w-auto mt-1 h-40 border-t-4 flex items-center justify-center">
+                       <div class="flex  gap-4 ">
+                        <a href="https://www.linkedin.com/in/jasveer-singh-242645296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="linkedin-fill (1).png" class=" text-xl border border-gray-700 rounded-full p-3 hover:bg-blue-500 hover:-translate-y-0 duration-500  hover:shadow-[0_4px_4px_4px_#000]  dark:border dark:border-white dark:hidden "></a>
+                                        
+                        <a href="https://www.linkedin.com/in/jasveer-singh-242645296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="linkedin-line.png" class="  text-xl border border-gray-700 rounded-full p-3 hover:bg-blue-500 hover:-translate-y-0 duration-500  hover:shadow-[0_4px_4px_4px_#fff]  dark:border dark:border-white  hidden dark:block "></a>
+
+                        <a href="https://github.com/jasveersingh86/jasveer-singh"><img src="github-line.png" class=" text-xl border border-gray-700 rounded-full p-3 hover:bg-blue-500 hover:-translate-y-0 duration-500  hover:shadow-[0_4px_4px_4px_#000] dark:border dark:border-white  dark:hidden"></a> 
+                        <a href="https://github.com/jasveersingh86/jasveer-singh"><img src="github-fill.png" class=" text-xl border border-gray-700 rounded-full p-3 hover:bg-blue-500 hover:-translate-y-0 duration-500  hover:shadow-[0_4px_4px_4px_#fff]  dark:border dark:border-white hidden dark:block "></a>
+                           
+                        <a href="#"><img src="instagram-line.png" class=" text-xl border border-gray-700 rounded-full p-3 hover:bg-blue-500 hover:-translate-y-0 duration-500  hover:shadow-[0_4px_4px_4px_#000] dark:border dark:border-white dark:hidden "></a>  
+                        <a href="#"><img src="instagram-line (1).png" class=" text-xl border border-gray-700 rounded-full p-3 hover:bg-blue-500 hover:-translate-y-0 duration-500  hover:shadow-[0_4px_4px_4px_#fff]  dark:border dark:border-white hidden dark:block "></a> 
+                        <a href="https://www.facebook.com/profile.php?id=100085574677696&mibextid=ZbWKwL"><img src="facebook-line (1).png" class=" text-xl border border-gray-700 rounded-full p-3 hover:bg-blue-500 hover:-translate-y-0 duration-500  hover:shadow-[0_4px_4px_4px_#000]  dark:border dark:border-white dark:hidden"></a> 
+                        <a href="https://www.facebook.com/profile.php?id=100085574677696&mibextid=ZbWKwL"><img src="facebook-line.png" class=" text-xl border border-gray-700 rounded-full p-3 hover:bg-blue-500 hover:-translate-y-0 duration-500  hover:shadow-[0_4px_4px_4px_#fff]  dark:border dark:border-white hidden dark:block "></a> 
+                       </div> 
+                        
+                    </div>
+                    <p class="flex items-center justify-center"><span>copyright©2024, Created by</span><span class=" pl-1 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-blue-500">Jasveer Singh.</span></p>
+
+                 </div>
+                  <!-- --------- mode------- -->
+                 
+               
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
